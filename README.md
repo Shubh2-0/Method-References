@@ -5,6 +5,7 @@ Java provides a new feature called method reference in Java 8. Method reference 
 # Advantages of Method Reference
 
 ✨ It is shorter than a lambda expression
+
 ✨ It includes the name of the class, which contains the method; this improves the readability of the code.
 
 # Types of Method Reference
