@@ -11,8 +11,11 @@ Java provides a new feature called method reference in Java 8. Method reference 
 **There are four types of method references available**
 
 1️⃣ Static Method Reference\
+
 2️⃣ Instance Method Reference\
+
 3️⃣ Arbitrary object – Instance Method Reference\
+
 4️⃣ Constructor Reference
 
 
