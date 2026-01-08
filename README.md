@@ -1,39 +1,53 @@
-# Method Reference
+<div align="center">
 
-Java provides a new feature called method reference in Java 8. Method reference is used to refer method of the functional interface. It is a compact and easy form of a lambda expression. Each time when you are using a lambda expression to just referring a method, you can replace your lambda expression with a method reference.
+# 📎 Method References
 
-# Advantages of Method Reference
+[![GitHub stars](https://img.shields.io/github/stars/Shubh2-0/Method-References?style=for-the-badge&logo=github&color=yellow)](https://github.com/Shubh2-0/Method-References/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Shubh2-0/Method-References?style=for-the-badge&logo=github&color=blue)](https://github.com/Shubh2-0/Method-References/network/members)
 
-✨ It is shorter than a lambda expression
+### Simplified Lambda Expressions
 
-✨ It includes the name of the class, which contains the method; this improves the readability of the code.
+*Cleaner syntax for functional programming*
 
-# Types of Method Reference
-**There are four types of method references available**
+</div>
 
-1️⃣ Static Method Reference
+---
 
-2️⃣ Instance Method Reference
+## 🎯 About
 
-3️⃣ Arbitrary object – Instance Method Reference
+**Method References** are shorthand for lambda expressions that call a single method. They make code more readable and concise.
 
-4️⃣ Constructor Reference
+## 📚 Types of Method References
 
+| Type | Syntax | Example |
+|------|--------|---------|
+| Static Method | Class::staticMethod | Math::max |
+| Instance Method | object::method | str::length |
+| Arbitrary Object | Class::instanceMethod | String::toUpperCase |
+| Constructor | Class::new | ArrayList::new |
 
-<img src="https://www.javainterviewpoint.com/wp-content/uploads/2020/06/Types-of-Method-Reference.png" />
+## 💻 Examples
+
+```java
+// Lambda vs Method Reference
+list.forEach(s -> System.out.println(s));  // Lambda
+list.forEach(System.out::println);         // Method Reference
+
+// More examples
+list.stream().map(String::toUpperCase);    // Instance method
+list.stream().sorted(Integer::compare);    // Static method
+list.stream().collect(ArrayList::new);     // Constructor
+```
+
+## 🛠️ Technologies
+
+Java 8+ | Lambda | Stream API
 
 ## 📬 Contact
 
-If you want to contact me, you can reach me through below handles.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-bhati-787319213/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shubhambhati226@gmail.com)
 
- <p align="left">
-  <a href="https://www.linkedin.com/in/shubham-bhati-787319213/" target="_blank"><img align="center" src="https://skillicons.dev/icons?i=linkedin" width="40px" alt="linkedin" /></a>&emsp;
-  <a title="shubhambhati226@gmail.com" href="mailto:shubhambhati226@gmail.com" target="_blank"><img align="center"  src="https://cdn-icons-png.flaticon.com/128/888/888853.png"  width="40px"   alt="mail-me" /></a>&emsp;
-  <a href="https://wa.me/+916232133187" target="blank"><img align="center" src="https://media2.giphy.com/media/Q8I2fYA773h5wmQQcR/giphy.gif" width="40px"  alt="whatsapp-me" /></a>&emsp;	
- </p>
+---
 
-<br>
-
-<div align="center">
-  <strong>💓Happy Coding😄💻</strong>
-</div>
+**Keywords:** Java Method-Reference Lambda Functional-Programming Stream-API Java8
